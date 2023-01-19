@@ -16,8 +16,10 @@ http.createServer((req, res) => {
   }
 
   if (['GET', 'POST'].indexOf(req.method) > -1) {
+    // decode and console.log
     console.log(decodeURIComponent(req.url))
     let body = ''
+    // in case of post console.log data send
     req.on('data', data => body += data)
       .on('end', () => console.log(body))
     res.writeHead(200, headers)
