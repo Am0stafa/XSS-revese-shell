@@ -19,7 +19,7 @@ http.createServer((req, res) => {
     // decode and console.log
     console.log(decodeURIComponent(req.url))
     let body = ''
-    // in case of post console.log data send
+    // in case of post console.log the object send in the body
     req.on('data', data => body += data)
       .on('end', () => console.log(body))
     res.writeHead(200, headers)
