@@ -1,7 +1,7 @@
 ## info
 http server capture user data by either sending the data in a query or in the body.
 
-#### capture user cookies ####
+#### Capture user cookies ####
 
 ```js
   <script>
