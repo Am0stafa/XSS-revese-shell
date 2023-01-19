@@ -1,15 +1,4 @@
-
-### Setup
-
-You'll need to install node.js if you don't have it already
-
-#### OSX
-```bash
-brew install node
-```
-
-#### Windows
-https://nodejs.org/en/#home-downloadhead
+## info
 
 ### Running the servers
 
