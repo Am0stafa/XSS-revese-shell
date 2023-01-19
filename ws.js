@@ -15,6 +15,6 @@ wss.on('connection', ws => {
     //terminal: false
   })
 
-  // read input from the terminal and send it back as the response
+  // read input from the terminal and send it back as the response. write any js code and watch it get executed!
   rl.on('line', line => ws.send(line))
 })
